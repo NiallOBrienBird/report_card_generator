@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content=IE=edge>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <link rel=stylesheet href=styles.css>
+    <title>report_card_writer</title>
+</head>
+<body> 
+    <div class="header">
+        <h1>Report Card Writer</h1>   
+        <div class="input template">
+            <h3>Template:  </h3>
+            <input class="upload" type="file" name="inputfile" id="inputfile">
+        </div> 
+    </div>
+    <div class="main">
+        <div class="input">
+            <div class="globals">
+                <h3>Name:</h3>
+                <input type="text" class="name" template="Min-Jun">
+            </div>
+            <div class="globals">
+                <h3>Level:</h3>
+                <select class="option level" default="0">
+                    <option value="Seedbed 1">Seedbed 1</option>
+                    <option value="Seedbed 2">Seedbed 2</option>
+                    <option value="Seed 1">Seed 1</option>
+                    <option value="Seed 2">Seed 2</option>
+                    <option value="Sprout 1">Sprout 1</option>
+                    <option value="Sprout 2">Sprout 2</option>
+                    <option value="Sprout 3">Sprout 3</option>
+                    <option value="Sapling 1">Sapling 1</option>
+                    <option value="Sapling 2">Sapling 2</option>
+                    <option value="Junior Master 2">Junior Master 1</option>
+                    <option value="Junior Master 2">Junior Master 2</option>
+                </select>
+            </div>
+            <div class="globals">
+                <h3>Track:</h3>
+                <select class="option track" default="1">
+                    <option value="A-Track">A-Track</option>
+                    <option value="B-Track">B-Track</option>
+                </select>
+            </div>
+            <div class="roll">⚄</div>
+        </div> 
+    
+        <div class="container">
+            <!-- Dynamically insert here -->
+        </div>
+        <h4 class="word-count">Word count:</h4>
+        <h4 class="output">Output here...</h4>
+    </div>
+    <script src=app.js></script>
+</body>
+</html>
